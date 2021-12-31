@@ -1,0 +1,300 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Sidharrth Nagappan} \\ \vspace{1pt}
+    % 2, Jalan Villa 2/3, Lakefront Villa, 63000 Sepang, Selangor \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +60163132154 ~ \href{mailto:sidharrth2002@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sidharrth2002@gmail.com}} ~ 
+    \href{https://mathsforgeeks.org}{\raisebox{-0.2\height}\faGlobe\ \underline{mathsforgeeks.org}}  ~
+    \href{https://github.com/sidharrth2002}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/sidharrth2002}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Abstract}
+Full Stack Developer and Data Scientist with an affinity for mathematics. Particularly
+interested in natural language processing and full stack Javascript. I currently maintain Sambal SOS,
+a crowdsourcing platform inspired by the Covid-19 pandemic, catering to over 28000 users and work on NLP research,
+primarily on industrial text scoring using hybrid linear attention transformers.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Computer Science (Hons.) in Data Science}{November 2019 -- }
+      {Multimedia University}{}
+        \resumeItemListStart
+        \resumeItem{\textbf{Current CGPA: 3.99/4.00} (Consecutively on the dean's list)}
+        \resumeItem{Merit Scholar}
+        \resumeItem{Thesis: Document Scoring using Natural Language Processing}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Deep Learning Specialisation}{}
+      {deeplearning.ai}{}
+        \resumeItemListStart
+        \resumeItem{A 5-course specialisation offered by deeplearning.ai (3/5 completed)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Foundation in IT}{November 2018 -- November 2019}
+      {Multimedia University}{}
+      \resumeItemListStart
+      \resumeItem{\textbf{CGPA: 4.00/4.00}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {International General Certificate of Secondary Education (IGCSE) }{September 2016 -- June 2018}
+      {elc International School}{}
+      \resumeItemListStart
+        \resumeItem{Crystal 1st Rank}
+        \resumeItem{9 A*s in Mathematics, Additional Mathematics, First Language English, Biology, Chemistry, Physics, Business Studies, Foreign Language Malay}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Lava X}{May 2021 -- August 2021}
+      {Full Stack Developer}{Part Time}
+      \resumeItemListStart
+        \resumeItem{Worked primarily on a Content Management System for an e-commerce platform using Typescript, React (Next.js), Nest.js and GraphQL}
+        \resumeItem{Wrote production ready React components and integrated them with the backend server, while adhering to standardised Git and CI/CD workflows}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Auronex}{October 2020 -- November 2020}
+      {Software Engineer}{Part Time}
+      \resumeItemListStart
+        \resumeItem{Integration between the frontend Flutter application and backend API for a fitness application.}
+        \resumeItem{Worked on a Nodejs RESTful API and a React frontend for an accounting platform and worked on direct CSS modifications to e-commerce platforms}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Notable Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Sambal SOS} $|$ \emph{React.js, Node.js (Express), PostgreSQL, Google Cloud, AWS}}{July 2021 - }
+          \resumeItemListStart
+            \resumeItem{With over 28000 users, Sambal SOS crowdsources aid data across the nation via a real time map, built into a dynamic PWA. Went viral on Twitter and scaled rapidly.}
+            \resumeItem{Led a team of 5 developers across all ends of the stack, defined CI/CD and Docker pipelines, and set up continuous deployment.}
+            \resumeItem{Engineered a scalable backend API on the Javascript stack, that seamlessly integrates with a React frontend}
+            \resumeItem{Was accordingly invited to speak on BFM, Malaysia's Big Data Week, and our story was featured on over 15 major publications in Malaysia}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Hybrid Linear Attention Transformers for Industrial Text Scoring} $|$ \emph{Tensorflow, Pytorch, Huggingface}}{August 2021 - }
+          \resumeItemListStart
+            \resumeItem{An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel neural framework, encompassing LSTMs, keyword attention and modern linear attention transformers such as the Longformer and BigBird.}
+            \resumeItem{Trained high performance text scoring models on GCP compute clusters}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Common Sans} $|$ \emph{React.js, Python (Flask, Tensorflow)}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{Credit Profile Analysis reinvented with Natural Language Processing. Analysing the online presence of an SME by grabbing interactions on various platforms via scraping and open source APIs and using sentiment analysis to aggregate a score.}
+            \resumeItem{Wrote a Flask server that deploys crawlers to scrape the relevant platforms, aggregates them and utilises custom NLP pipelines}
+            \resumeItemListEnd
+          \vspace{-1pt}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Achievements}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AtlasHack 2021 Bounty Challenge Winner}}{March 2021}
+          \vspace{-20pt}
+      \resumeProjectHeading
+          {\textbf{RHBHack 2021 Special Challenge Winner}}{June 2021}
+          \vspace{-20pt}
+      \resumeProjectHeading
+          {\textbf{KUMON Mathematics Completer}}{August 2016}
+          \resumeItemListStart
+            \resumeItem{Completed KUMON Maths, ranking 6th out of completers in the age group in the country at the
+            age of 13}
+          \resumeItemListEnd
+          \vspace{-2pt}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript, Typescript (React.js, Redux, MobX, Next.js, React Native), Node.js (Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C, C++, HTML/CSS} \\
+     \textbf{Cloud}{: Heroku, Google Cloud} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Hackerspace MMU}{August 2019 --}{President}{}
+            \resumeItemListStart
+                \resumeItem{Running a hacker-maker group within the university, organised weekly meetups and hackathons}
+            \resumeItemListEnd
+        \resumeSubheading{Google Developer Student Club}{October 2020 -- }{Technical Lead, President}{}
+            \resumeItemListStart
+                \resumeItem{Organised talks and workshops including Flutter, Full Stack Web Development, Javascript Week 2021, study jams for Python and ML and university-wide hackathons}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \section{Spoken Languages}
+    \resumeItemListStart
+        \resumeItem{English- Full Native Proficiency}
+        \resumeItem{Malay- Full Working Proficiency}
+        \resumeItem{Tamil- Full Working Proficiency}
+        \resumeItem{Mandarin- Beginner's Proficiency}
+    \resumeItemListEnd
+
+\end{document}
