@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -28,7 +28,7 @@
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
 
@@ -123,7 +123,7 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Sidharrth Nagappan} \\ \vspace{1pt}
+    {\Huge \scshape Sidharrth Nagappan (Malaysian)} \\ \vspace{1pt}
     % 2, Jalan Villa 2/3, Lakefront Villa, 63000 Sepang, Selangor \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +60163132154 ~ \href{mailto:sidharrth2002@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sidharrth2002@gmail.com}} ~ 
     \href{https://mathsforgeeks.org}{\raisebox{-0.2\height}\faGlobe\ \underline{mathsforgeeks.org}}  ~
@@ -131,11 +131,11 @@
     \vspace{-8pt}
 \end{center}
 
-\section{Abstract}
-Full Stack Developer and Data Scientist with an affinity for mathematics. Particularly
-interested in natural language processing and full stack Javascript. I currently maintain Sambal SOS,
-a crowdsourcing platform inspired by the Covid-19 pandemic, catering to over 28000 users and work on NLP research,
-primarily on industrial text scoring using hybrid linear attention transformers.
+% \section{Abstract}
+% Full Stack Developer and Data Scientist with an affinity for mathematics. Particularly
+% interested in natural language processing and full stack Javascript. I currently maintain Sambal SOS,
+% a crowdsourcing platform inspired by the Covid-19 pandemic, catering to over 28000 users and work on NLP research,
+% primarily on industrial text scoring using hybrid linear attention transformers.
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -144,9 +144,10 @@ primarily on industrial text scoring using hybrid linear attention transformers.
       {Bachelor of Computer Science (Hons.) in Data Science}{November 2019 -- }
       {Multimedia University}{}
         \resumeItemListStart
-        \resumeItem{\textbf{Current CGPA: 3.99/4.00} (Consecutively on the dean's list)}
+        \resumeItem{\textbf{Current CGPA: 3.99/4.00} (Consecutively on the dean's list and on track for first class honours)}
         \resumeItem{Merit Scholar}
         \resumeItem{Thesis: Document Scoring using Natural Language Processing}
+        \resumeItem{Foundation in Information Technology \textbf{CGPA: 4.00/4.00}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -157,18 +158,10 @@ primarily on industrial text scoring using hybrid linear attention transformers.
       \resumeItemListEnd
 
     \resumeSubheading
-      {Foundation in IT}{November 2018 -- November 2019}
-      {Multimedia University}{}
-      \resumeItemListStart
-      \resumeItem{\textbf{CGPA: 4.00/4.00}}
-      \resumeItemListEnd
-
-    \resumeSubheading
       {International General Certificate of Secondary Education (IGCSE) }{September 2016 -- June 2018}
       {elc International School}{}
       \resumeItemListStart
-        \resumeItem{Crystal 1st Rank}
-        \resumeItem{9 A*s in Mathematics, Additional Mathematics, First Language English, Biology, Chemistry, Physics, Business Studies, Foreign Language Malay}
+        \resumeItem{Crystal 1st Rank- 9 A*s in Mathematics, Additional Mathematics, First Language English, Biology, Chemistry, Physics, Business Studies, Foreign Language Malay}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
@@ -192,10 +185,17 @@ primarily on industrial text scoring using hybrid linear attention transformers.
 
 
 %-----------EXPERIENCE-----------
-\section{Professional Experience}
+\section{Relevant Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+      {Fusionex x Multimedia University}{August 2021 -- }
+      {Research in Natural Language Processing (Hybrid Linear Attention Transformers for Industrial Text Scoring)}{}
+      \resumeItemListStart
+        \resumeItem{An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel neural framework, encompassing LSTMs, keyword attention and modern linear attention transformers such as the Longformer and BigBird.}
+        \resumeItem{Trained high performance text scoring models on sponsored GCP compute clusters}
+      \resumeItemListEnd
 
-    \resumeSubheading
+  \resumeSubheading
       {Lava X}{May 2021 -- August 2021}
       {Full Stack Developer}{Part Time}
       \resumeItemListStart
@@ -208,7 +208,7 @@ primarily on industrial text scoring using hybrid linear attention transformers.
       {Software Engineer}{Part Time}
       \resumeItemListStart
         \resumeItem{Integration between the frontend Flutter application and backend API for a fitness application.}
-        \resumeItem{Worked on a Nodejs RESTful API and a React frontend for an accounting platform and worked on direct CSS modifications to e-commerce platforms}
+        \resumeItem{Worked on a Nodejs RESTful API and a React frontend for an accounting platform and made direct CSS modifications to e-commerce platforms}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -221,17 +221,11 @@ primarily on industrial text scoring using hybrid linear attention transformers.
       \resumeProjectHeading
           {\textbf{Sambal SOS} $|$ \emph{React.js, Node.js (Express), PostgreSQL, Google Cloud, AWS}}{July 2021 - }
           \resumeItemListStart
-            \resumeItem{With over 28000 users, Sambal SOS crowdsources aid data across the nation via a real time map, built into a dynamic PWA. Went viral on Twitter and scaled rapidly.}
-            \resumeItem{Led a team of 5 developers across all ends of the stack, defined CI/CD and Docker pipelines, and set up continuous deployment.}
-            \resumeItem{Engineered a scalable backend API on the Javascript stack, that seamlessly integrates with a React frontend}
-            \resumeItem{Was accordingly invited to speak on BFM, Malaysia's Big Data Week, and our story was featured on over 15 major publications in Malaysia}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{Hybrid Linear Attention Transformers for Industrial Text Scoring} $|$ \emph{Tensorflow, Pytorch, Huggingface}}{August 2021 - }
-          \resumeItemListStart
-            \resumeItem{An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel neural framework, encompassing LSTMs, keyword attention and modern linear attention transformers such as the Longformer and BigBird.}
-            \resumeItem{Trained high performance text scoring models on GCP compute clusters}
+            \resumeItem{With over 30000 users, Sambal SOS crowdsources aid data across the nation via a real time map, built into a dynamic PWA, to identify members of the community that need help. The app went viral within a day.}
+            \resumeItem{Built a modular React frontend off Chakra UI and engineered a scalable backend Node.js server. Led a team of 5 developers across all ends of the stack, enforced code practices and defined CI/CD and Docker pipelines. Reviewed and merged over 200 pull requests from the Malaysian open source community.}
+            \resumeItem{Set up custom object storage server and database engine on Ubuntu VPS, both on AWS and Digital Ocean.}
+            \resumeItem{Was accordingly invited to speak on BFM, Malaysia's Big Data Week and national panels and our story was featured on over 20 major publications in Malaysia}
+            \resumeItem{\url{https://github.com/sidharrth2002/sambal-sos-app}}
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
@@ -250,9 +244,16 @@ primarily on industrial text scoring using hybrid linear attention transformers.
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{AtlasHack 2021 Bounty Challenge Winner}}{March 2021}
+          \resumeItemListStart
+            \resumeItem{Awarded with a RM 2000 prize for the best solution to the challenge.}
+            \resumeItem{Built an auto-routing technician dispatch PWA using React.js (Ant Design), Node.js (Express) and MongoDB.}
+          \resumeItemListEnd
           \vspace{-20pt}
       \resumeProjectHeading
           {\textbf{RHBHack 2021 Special Challenge Winner}}{June 2021}
+          \resumeItemListStart
+            \resumeItem{Won a RM 1000 prize for our proposed NLP-based credit profile analysis pipeline.}
+          \resumeItemListEnd
           \vspace{-20pt}
       \resumeProjectHeading
           {\textbf{KUMON Mathematics Completer}}{August 2016}
@@ -270,6 +271,7 @@ primarily on industrial text scoring using hybrid linear attention transformers.
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript, Typescript (React.js, Redux, MobX, Next.js, React Native), Node.js (Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C, C++, HTML/CSS} \\
+     \textbf{Databases}{: MongoDB, PostgreSQL, MySQL, Redis} \\
      \textbf{Cloud}{: Heroku, Google Cloud} \\
     }}
  \end{itemize}
@@ -279,7 +281,7 @@ primarily on industrial text scoring using hybrid linear attention transformers.
 %-----------INVOLVEMENT---------------
 \section{Leadership / Extracurricular}
     \resumeSubHeadingListStart
-        \resumeSubheading{Hackerspace MMU}{August 2019 --}{President}{}
+        \resumeSubheading{Hackerspace MMU}{August 2019 --}{Secretary - President}{}
             \resumeItemListStart
                 \resumeItem{Running a hacker-maker group within the university, organised weekly meetups and hackathons}
             \resumeItemListEnd
