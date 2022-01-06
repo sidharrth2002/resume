@@ -1,2 +1,5 @@
-# resume
-Sidharrth's Resume
+# Sidharrth's Resume
+
+I'm a big fan of Latex, so I made two versions of my resume (1-pager and 2-pager).
+
+<img src="./sid-resume.png">
