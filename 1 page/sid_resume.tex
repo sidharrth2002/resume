@@ -18,7 +18,28 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+\usepackage{tikz}
 
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -52,7 +73,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-11.9pt}\scshape\raggedright\large
+  \vspace{-7pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -68,7 +89,7 @@
 }
 
 \newcommand{\resumeItem}[1]{
-  \item{
+  \item \small{
     {#1 \vspace{-2pt}}
   }
 }
@@ -84,8 +105,9 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      {#3} & \textit{#4} \\
+      \textbf{#1} & \small{#2} \\
+      % {#3} & \textit{#4} \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
@@ -95,7 +117,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeItemTwoFields}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItemTwoFields{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -114,7 +142,6 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://mathsforgeeks.org}{\Large Sidharrth Nagappan}} & Email : \href{mailto:sidharrth2002@gmail.com}{sidharrth2002@gmail.com}\\
   \href{https://mathsforgeeks.org}{https://mathsforgeeks.org} | \href{https://github.com/sidharrth2002}{https://github.com/sidharrth2002} & Mobile : +60163132154 \\
-  % \textbf{Seeking a Software Engineering/ML internship for May 2022}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -122,11 +149,11 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Multimedia University}{Cyberjaya, MY}
-      {\textit{Bachelor of Computer Science (Hons.) in Data Science}; \textbf{CGPA: 3.99/4.00}}{Nov 2019 - Present}
+      {\textit{Bachelor of Computer Science (Hons.) in Data Science}}{Nov 2019 - Present}
       \resumeItemListStart
-        \item{Lead @ Google Developer Student Clubs- Organised and taught workshops on Python, Javascript, Machine Learning, Git and Flutter with a cumulative total of 1000 participants}
-        \item{President @ Hackerspace MMU- Led a hacker-maker group to promote an engineering culture}
-        \item{Deep Learning Specialisation (deeplearning.ai) | Foundation GPA: 4.00/4.00 | IGCSE: 9 A*s}
+        \resumeItem{\textbf{CGPA: 3.99/4.00} - Foundation GPA: 4.00/4.00 - IGCSE: 9 A*s - Deep Learning Specialisation (deeplearning.ai)}
+        \resumeItemTwoFields{Lead @ Google Developer Student Clubs}{Organised hackathons, arranged talks and taught workshops on Python, Javascript, Machine Learning, Git and Flutter with a cumulative total of 1000 participants}
+        \resumeItemTwoFields{President @ Hackerspace MMU}{Hacker-maker group that promotes an engineering culture}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -139,25 +166,32 @@
       {Fusionex x Multimedia University}{Kuala Lumpur, MY}
       {\textit{Undergraduate Researcher in Natural Language Processing}}{Aug 2021 - Present}
       \resumeItemListStart
-        \item {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow.}
-        \item {Trained high performance text scoring models on GCP compute clusters}
+        \resumeItem {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow, with extended research into computational long content scoring.}
+        \resumeItem {Trained high performance text scoring models on GCP compute clusters with FastAPI deployment.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Rodeo}{Kuala Lumpur, MY}
+      {\textit{Project Senior Full Stack Developer (Freelance)}}{Jan 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Redeveloping Rodeo's transit advertising mobile application to serve a market of 10000 users using Typescript, React Native, Node.js, MySQL and AWS.}
       \resumeItemListEnd
 
       \resumeSubheading
       {Sambal SOS (\url{https://www.sambalsos.com})}{Kuala Lumpur, MY}
       {\textit{Co-Founder and Head of Engineering}}{July 2021 - Present}
       \resumeItemListStart
-        \item{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. Went viral and scaled rapidly after we built the initial version in under 4 days.}
-        \item{Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Wrote frontend PWA using React.js (Chakra UI), backend server using Node.js(Express.js) and PostgreSQL, and image bucket on an AWS VPS.
-        Spun up production clusters and scaled on GCP.}
-        \item{Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums.}
+        \resumeItem{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. We went viral, scaled rapidly, and optimised the server after building the initial version in under 4 days.}
+        \resumeItem{Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Wrote frontend PWA using React.js (Chakra UI), backend server using Node.js (Express.js) and PostgreSQL, with image bucket on an AWS VPS.
+        Spun up production clusters and scaled on GCP for thousands of simultaneous logins.}
+        \resumeItem{Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums such as BFM and Malaysia's Big Data Week.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {LavaX}{Puchong, MY}
+      {Lava X}{Puchong, MY}
       {\textit{Full Stack Developer (Part Time)}}{June 2021 - Aug 2021}
       \resumeItemListStart
-        \item
+        \resumeItem
           {Built an MNC e-commerce CMS platform using Typescript, React (Next.js), Nest.js and GraphQL}
       \resumeItemListEnd
 
@@ -165,10 +199,10 @@
       {Auronex}{Cyberjaya, MY}
       {\textit{Software Engineer (Part Time)}}{Oct 2020 - Nov 2020}
       \resumeItemListStart
-        \item
+        \resumeItem
           {Integration between the frontend Flutter client and backend API for a fitness application.
           }
-        \item
+        \resumeItem
           {Worked on a Node.js RESTful API and a React frontend for an accounting platform and made
           custom modifications to multiple themed components for clients.
           }
@@ -180,29 +214,32 @@
 \section{Notable Projects}
 \resumeSubHeadingListStart
 % \resumeItemWithHeading{Sambal SOS}{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums. | \textit{React.js (Redux, Chakra UI), Node.js (Express), PostgreSQL, GCP} | \href{https://github.com/sidharrth2002/sambal-sos-app}{sambalsos.com}}
-\resumeItemWithHeading{Vending.js}{Built a PWA that automatically routes technicians to nearest appointments based on current and past locations | \textit{React.js, Node.js (Express.js), MongoDB} - \href{https://github.com/sidharrth2002/vending.js}{github.com/sidharrth2002/vending.js}}
-\resumeItemWithHeading{Common Sans}{Built a credit profile analysis engine powered by web scrapers, bots and NLP | \textit{React.js, Tensorflow, Flask} - \href{https://github.com/sidharrth2002/common-sans}{github.com/sidharrth2002/common-sans}}
-\resumeItemWithHeading{Semantic Style Transfer}{Trained and deployed pipeline that combines fast style transfer with semantic segmentation | \textit{Tensorflow, Streamlit} - \href{https://github.com/sidharrth2002/neural-style-transfer}{github.com/sidharrth2002/neural-style-transfer}}
+\resumeSubItem{Vending.js \href{https://github.com/sidharrth2002/vending.js}{\ExternalLink}}
+    {PWA that automatically routes technicians to nearest appointments based on current and past locations for efficient dispatch | \textit{React.js, Node.js (Express.js), MongoDB}}
+\resumeSubItem{Common Sans \href{https://github.com/sidharrth2002/common-sans}{\ExternalLink}}
+    {Credit profile analysis engine powered by web scrapers and NLP using social media and e-commerce review data with support for Manglish sentiment and time-series activity - \textit{React.js, Tensorflow, Flask, Selenium}}
+\resumeSubItem{Semantic Style Transfer \href{https://github.com/sidharrth2002/neural-style-transfer}{\ExternalLink}}
+    {Trained and deployed pipeline that combines fast style transfer with UNet semantic segmentation for aesthetically stunning blended reproductions | \textit{Tensorflow, Pytorch, Streamlit}}
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \item{Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Node.js, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis, Google Cloud}
+    \resumeItem{Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Node.js, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis, Google Cloud}
   \resumeSubHeadingListEnd
 
 \section{Awards}
 
   \resumeSubHeadingListStart
-    \resumeItemWithHeading{Hackathons}{RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
-    \resumeItemWithHeading{Academic}{The Dean's list, KUMON Mathematics Completer, Model UN Chairperson and Debater}
+    \resumeSubItem{Hackathon Wins}{\small RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
+    \resumeSubItem{Academic}{\small Dean's list, Crystal Rank, KUMON Mathematics Completer, Model UN Chairperson, DoFE Bronze}
   \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
 %  \resumeSubHeadingListStart
-%    \item{
+%    \resumeItem{
 %      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
 %      \hfill
 %      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
