@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,12pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -52,7 +52,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-13.8pt}\scshape\raggedright\large
+  \vspace{-11.9pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -114,7 +114,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://mathsforgeeks.org}{\Large Sidharrth Nagappan}} & Email : \href{mailto:sidharrth2002@gmail.com}{sidharrth2002@gmail.com}\\
   \href{https://mathsforgeeks.org}{https://mathsforgeeks.org} | \href{https://github.com/sidharrth2002}{https://github.com/sidharrth2002} & Mobile : +60163132154 \\
-  \textbf{Seeking a Software Engineering/ML internship for May 2022}
+  % \textbf{Seeking a Software Engineering/ML internship for May 2022}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -122,9 +122,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Multimedia University}{Cyberjaya, MY}
-      {Bachelor of Computer Science (Hons.) in Data Science; \textbf{CGPA: 3.99/4.00}}{Nov 2019 - Present}
+      {\textit{Bachelor of Computer Science (Hons.) in Data Science}; \textbf{CGPA: 3.99/4.00}}{Nov 2019 - Present}
       \resumeItemListStart
-        \item{Lead @ Google Developer Student Clubs- Organised and taught workshops on Python, Javascript, Machine Learning and Flutter with a cumulative total of 600 participants}
+        \item{Lead @ Google Developer Student Clubs- Organised and taught workshops on Python, Javascript, Machine Learning, Git and Flutter with a cumulative total of 1000 participants}
         \item{President @ Hackerspace MMU- Led a hacker-maker group to promote an engineering culture}
         \item{Deep Learning Specialisation (deeplearning.ai) | Foundation GPA: 4.00/4.00 | IGCSE: 9 A*s}
       \resumeItemListEnd
@@ -137,25 +137,25 @@
 
     \resumeSubheading
       {Fusionex x Multimedia University}{Kuala Lumpur, MY}
-      {Undergraduate Researcher in Natural Language Processing}{Aug 2021 - Present}
+      {\textit{Undergraduate Researcher in Natural Language Processing}}{Aug 2021 - Present}
       \resumeItemListStart
-        \item {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers Longformer and BigBird, using Huggingface, Pytorch and Tensorflow.}
+        \item {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow.}
         \item {Trained high performance text scoring models on GCP compute clusters}
       \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
+
+      \resumeSubheading
+      {Sambal SOS (\url{https://www.sambalsos.com})}{Kuala Lumpur, MY}
+      {\textit{Co-Founder and Head of Engineering}}{July 2021 - Present}
+      \resumeItemListStart
+        \item{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. Went viral and scaled rapidly after we built the initial version in under 4 days.}
+        \item{Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Wrote frontend PWA using React.js (Chakra UI), backend server using Node.js(Express.js) and PostgreSQL, and image bucket on an AWS VPS.
+        Spun up production clusters and scaled on GCP.}
+        \item{Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums.}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {Lava X}{Puchong, MY}
-      {Full Stack Developer (Part Time)}{June 2021 - Aug 2021}
+      {LavaX}{Puchong, MY}
+      {\textit{Full Stack Developer (Part Time)}}{June 2021 - Aug 2021}
       \resumeItemListStart
         \item
           {Built an MNC e-commerce CMS platform using Typescript, React (Next.js), Nest.js and GraphQL}
@@ -163,13 +163,13 @@
 
     \resumeSubheading
       {Auronex}{Cyberjaya, MY}
-      {Software Engineer (Part Time)}{Oct 2020 - Nov 2020}
+      {\textit{Software Engineer (Part Time)}}{Oct 2020 - Nov 2020}
       \resumeItemListStart
         \item
           {Integration between the frontend Flutter client and backend API for a fitness application.
           }
         \item
-          {Worked on a Nodejs RESTful API and a React frontend for an accounting platform and made
+          {Worked on a Node.js RESTful API and a React frontend for an accounting platform and made
           custom modifications to multiple themed components for clients.
           }
       \resumeItemListEnd
@@ -179,7 +179,8 @@
   %-----------EXPERIENCE-----------------
 \section{Notable Projects}
 \resumeSubHeadingListStart
-\resumeItemWithHeading{Sambal SOS}{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums. | \textit{React.js (Redux, Chakra UI), Node.js (Express), PostgreSQL, GCP} | \href{https://github.com/sidharrth2002/sambal-sos-app}{sambalsos.com}}
+% \resumeItemWithHeading{Sambal SOS}{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums. | \textit{React.js (Redux, Chakra UI), Node.js (Express), PostgreSQL, GCP} | \href{https://github.com/sidharrth2002/sambal-sos-app}{sambalsos.com}}
+\resumeItemWithHeading{Vending.js}{Built a PWA that automatically routes technicians to nearest appointments based on current and past locations | \textit{React.js, Node.js (Express.js), MongoDB} - \href{https://github.com/sidharrth2002/vending.js}{github.com/sidharrth2002/vending.js}}
 \resumeItemWithHeading{Common Sans}{Built a credit profile analysis engine powered by web scrapers, bots and NLP | \textit{React.js, Tensorflow, Flask} - \href{https://github.com/sidharrth2002/common-sans}{github.com/sidharrth2002/common-sans}}
 \resumeItemWithHeading{Semantic Style Transfer}{Trained and deployed pipeline that combines fast style transfer with semantic segmentation | \textit{Tensorflow, Streamlit} - \href{https://github.com/sidharrth2002/neural-style-transfer}{github.com/sidharrth2002/neural-style-transfer}}
 \resumeSubHeadingListEnd
@@ -187,13 +188,13 @@
 %-----------PROJECTS-----------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \item{Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis, Google Cloud}
+    \item{Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Node.js, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis, Google Cloud}
   \resumeSubHeadingListEnd
 
 \section{Awards}
 
   \resumeSubHeadingListStart
-    \resumeItemWithHeading{Hackathons}{RHBHack 2021, AtlasHack 2021 (Finalist, Special Challenge Winner)}
+    \resumeItemWithHeading{Hackathons}{RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
     \resumeItemWithHeading{Academic}{The Dean's list, KUMON Mathematics Completer, Model UN Chairperson and Debater}
   \resumeSubHeadingListEnd
 
