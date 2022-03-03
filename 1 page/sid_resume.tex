@@ -45,7 +45,7 @@
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 % \usepackage[default]{arial}
 
 % serif
@@ -89,7 +89,7 @@
 }
 
 \newcommand{\resumeItem}[1]{
-  \item \small{
+  \item{
     {#1 \vspace{-2pt}}
   }
 }
@@ -98,7 +98,8 @@
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      % \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -107,7 +108,8 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \small{#2} \\
       % {#3} & \textit{#4} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      % \textit{\small#3} & \textit{\small #4} \\
+      \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-6pt}
 }
 
@@ -118,7 +120,7 @@
 }
 
 \newcommand{\resumeItemTwoFields}[2]{
-  \item\small{
+  \item{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
@@ -157,6 +159,11 @@
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+\section{Publications}
+  \resumeItemListStart
+    \resumeItem{Sidharrth Nagappan, Hui-Ngo Goh, Amy Lim Hui Lan. Hybrid Deep Neural Networks for Industrial Text Scoring, \textit{The 35th International Conference on Industrial, Engineering \& Other Applications of Applied Intelligent Systems}, 2022.}
+  \resumeItemListEnd
+  \vspace{-10pt}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -164,9 +171,9 @@
 
     \resumeSubheading
       {Fusionex x Multimedia University}{Kuala Lumpur, MY}
-      {\textit{Undergraduate Researcher in Natural Language Processing}}{Aug 2021 - Present}
+      {\textit{Deep Learning Researcher in Natural Language Processing}}{Aug 2021 - Present}
       \resumeItemListStart
-        \resumeItem {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow, with extended research into computational long content scoring.}
+        \resumeItem {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow, with extended research into long content scoring.}
         \resumeItem {Trained high performance text scoring models on GCP compute clusters with FastAPI deployment.}
       \resumeItemListEnd
 
@@ -209,6 +216,7 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+  \vspace{-9pt}
 
   %-----------EXPERIENCE-----------------
 \section{Notable Projects}
@@ -231,8 +239,8 @@
 \section{Awards}
 
   \resumeSubHeadingListStart
-    \resumeSubItem{Hackathon Wins}{\small RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
-    \resumeSubItem{Academic}{\small Dean's list, Crystal Rank, KUMON Mathematics Completer, Model UN Chairperson, DoFE Bronze}
+    \resumeSubItem{Hackathon Wins}{RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
+    \resumeSubItem{Academic}{Dean's list, Crystal Rank, KUMON Mathematics Completer, Model UN Chairperson, DoFE Bronze}
   \resumeSubHeadingListEnd
 
 %
