@@ -45,7 +45,7 @@
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-\usepackage[default]{sourcesanspro}
+% \usepackage[default]{sourcesanspro}
 % \usepackage[default]{arial}
 
 % serif
@@ -143,25 +143,27 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://mathsforgeeks.org}{\Large Sidharrth Nagappan}} & Email : \href{mailto:sidharrth2002@gmail.com}{sidharrth2002@gmail.com}\\
-  \href{https://mathsforgeeks.org}{https://mathsforgeeks.org} | \href{https://github.com/sidharrth2002}{https://github.com/sidharrth2002} & Mobile : +60163132154 \\
+  \href{https://mathsforgeeks.org}{https://sidharrth.me/} | \href{https://github.com/sidharrth2002}{https://github.com/sidharrth2002} & Mobile : +60163132154 \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Multimedia University}{Cyberjaya, MY}
-      {\textit{Bachelor of Computer Science (Hons.) in Data Science}}{Nov 2019 - Present}
+      {\textit{Bachelor of Computer Science (Hons.) in Data Science}}{Cyberjaya, MY}
+      {Multimedia University (MMU)- Full Merit Scholar}{Nov 2019 - Dec 2022 (Anticipated)}
       \resumeItemListStart
-        \resumeItem{\textbf{CGPA: 3.99/4.00} - Foundation GPA: 4.00/4.00 - IGCSE: 9 A*s - Deep Learning Specialisation (deeplearning.ai)}
-        \resumeItemTwoFields{Lead @ Google Developer Student Clubs}{Organised hackathons, arranged talks and taught workshops on Python, Javascript, Machine Learning, Git and Flutter with a cumulative total of 1000 participants}
-        \resumeItemTwoFields{President @ Hackerspace MMU}{Hacker-maker group that promotes an engineering culture}
+        \resumeItem{\textbf{Cumulative GPA: 3.99/4.00}- Anticipated First Class Honours with Distinction}
+        \resumeItem{Dean's list for every semester with a perfect 4.0 for 7 consecutive semesters}
+        \resumeItem{\textbf{Foundation Year GPA: 4.00/4.00} - IGCSE O-Levels: 9 A+'s - Deep Learning Specialisation (deeplearning.ai)}
+        \resumeItemTwoFields{Lead @ Google Developer Student Clubs}{Organised hackathons, arranged talks and taught workshops on Python, Javascript, Machine Learning, Git and Flutter with a cumulative total of 1000 participants. Was actively involved in the Google Developer Space within KL and the greater Malaysian community.}
+        \resumeItemTwoFields{President @ Hackerspace MMU}{Cyberjaya's largest hacker-maker group that promotes an engineering culture within the wider student developer community.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \section{Publications}
   \resumeItemListStart
-    \resumeItem{Sidharrth Nagappan, Hui-Ngo Goh, Amy Lim Hui Lan. Hybrid Deep Neural Networks for Industrial Text Scoring, \textit{The 35th International Conference on Industrial, Engineering \& Other Applications of Applied Intelligent Systems}, 2022.}
+  \resumeItem{\textbf{Sidharrth Nagappan*}, Hui-Ngo Goh, Amy Hui-Lan Lim. Hybrid Deep Neural Networks for Industrial Text Scoring \textit{In Proceedings of The 35th International Conference on Industrial, Engineering \& Other Applications of Applied Intelligent Systems, Kitakyushu, Japan}, 2022.}
   \resumeItemListEnd
   \vspace{-10pt}
 
@@ -169,29 +171,49 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+  % - The data engineering team within AirAsia Superapp builds and scales our DataOps and MLOps infrastructure, feeding production data into our lake.
+  % - Partner with data analysts, data scientists, marketing and strategy to understand data and reporting requirements
+  % - Implement data pipelines on distributed Kubernetes clusters for regular ETL ingestion
+  % - Maintain lake by backfilling from transactional databases on an Ubuntu VPS
+  % - Adapt SQL and BigQuery scripts to keep up with changing business demands
+  % - Build dockerized automation scripts to federalise reporting across internal communication platforms
+
+  \resumeSubheading
+  {AirAsia}{Kuala Lumpur, MY}
+  {\textit{Data Engineer (DataOps)}}{Aug 2021 - Present}
+  \resumeItemListStart
+    \resumeItem{The data engineering team within AirAsia Superapp builds and scales our DataOps and MLOps infrastructure, feeding production data into our lake for distributed analysis and predictive modelling.}
+    \resumeItem{Partnered with data analysts, data scientists, marketing and strategy to understand data and reporting requirements, adapt SQL and BigQuery scripts in Apache Airflow pipelines to keep up with changing business demands and implement data pipelines on distributed Kubernetes clusters for regular ETL ingestion.}
+    \resumeItem{Maintained lake by monitoring for structural irregularities and backfilling from transactional databases and SFTP servers on CentOS and GCP Kubernetes Engine.}
+    \resumeItem{Built and deployed dockerized automation scripts to federalise reporting across internal communication platforms for AirAsia's entire data infrastructure.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {Sambal SOS (\url{https://www.sambalsos.com})}{Kuala Lumpur, MY}
+  {\textit{Co-Founder and Head of Engineering}}{July 2021 - Present}
+  \resumeItemListStart
+    \resumeItem{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. We went viral, scaled rapidly, and optimised the server after building the initial version in under 4 days.}
+    \resumeItem{Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Wrote frontend PWA using React.js (Chakra UI), backend server using Node.js (Express.js) and PostgreSQL, with image bucket on an AWS VPS.
+    Spun up production clusters and scaled on GCP for thousands of simultaneous logins. Set up a custom PostgreSQL server on multiple EC2 and DO droplets with nginx and load balancers.}
+    \resumeItem{Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums such as BFM and Malaysia's Big Data Week.}
+  \resumeItemListEnd
+
     \resumeSubheading
-      {Fusionex x Multimedia University}{Kuala Lumpur, MY}
+      {Fusionex Group (Research Partnership)}{Kuala Lumpur, MY}
       {\textit{Deep Learning Researcher in Natural Language Processing}}{Aug 2021 - Present}
       \resumeItemListStart
-        \resumeItem {An ongoing industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow, with extended research into long content scoring.}
-        \resumeItem {Trained high performance text scoring models on GCP compute clusters with FastAPI deployment.}
+        \resumeItem {An industrial research project that aims to automate the adherence checking of annual reports through a novel hybrid framework, encompassing LSTMs, keyword attention and linear attention transformers (Longformer and BigBird), using Pytorch and Tensorflow, with extended research into computational long content scoring.}
+        \resumeItem{Collated the world's first labelled corpus of annual reports and corporate documents in partnership with the Malaysian securities commission.}
+        \resumeItem {Trained high-performance text scoring models on GCP compute clusters with FastAPI and Docker deployment.}
       \resumeItemListEnd
 
       \resumeSubheading
       {Rodeo}{Kuala Lumpur, MY}
-      {\textit{Project Senior Full Stack Developer (Freelance)}}{Jan 2022 - Present}
+      {\textit{Senior Staff Software Engineer}}{Jan 2022 - Present}
       \resumeItemListStart
-        \resumeItem{Redeveloping Rodeo's transit advertising mobile application to serve a market of 10000 users using Typescript, React Native, Node.js, MySQL and AWS.}
-      \resumeItemListEnd
-
-      \resumeSubheading
-      {Sambal SOS (\url{https://www.sambalsos.com})}{Kuala Lumpur, MY}
-      {\textit{Co-Founder and Head of Engineering}}{July 2021 - Present}
-      \resumeItemListStart
-        \resumeItem{Malaysia's first open-source aid data crowdsourcing platform with over 30000 users, inspired by the pandemic. We went viral, scaled rapidly, and optimised the server after building the initial version in under 4 days.}
-        \resumeItem{Led a team of 5 developers across all ends of the stack, defined code practices, CI/CD and Docker workflows. Wrote frontend PWA using React.js (Chakra UI), backend server using Node.js (Express.js) and PostgreSQL, with image bucket on an AWS VPS.
-        Spun up production clusters and scaled on GCP for thousands of simultaneous logins.}
-        \resumeItem{Merged over 100 PRs from the Malaysian open source community. Was featured in over 20 major publications in Malaysia and spoke on multiple prestigious forums such as BFM and Malaysia's Big Data Week.}
+        \resumeItem{Rodeo provides transit advertising solutions, and the company needed a new app that connects potential clients to marketing campaigns. As of Series B, the company has a valuation of RM 20 million.}
+        \resumeItem{The two-man engineering team at Rodeo is rebuilding the MVP from the ground up, including a real-time mobile app for drivers, an admin interface, a gamified app for the general public and a super app server.}
+        \resumeItem{The super app's server is scaled across Dockerized GCP compute engines, with MongoDB clusters and GCS image buckets. Direct credit payments are automated through TnG digital's API and Stripe, with payment and email automation modules.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -233,14 +255,15 @@
 %-----------PROJECTS-----------------
 \section{Technical Skills}
   \resumeSubHeadingListStart
-    \resumeItem{Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Node.js, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis, Google Cloud}
+    \resumeItem{Languages and frameworks: Python (Tensorflow, Keras, Pytorch, Scikitlearn, Pandas, Flask, OpenCV, Airflow), Javascript (Typescript, React.js, Redux, MobX, Next.js, React Native, Node.js, Express.js, Nest.js, Apollo), Dart (Flutter), Java (JavaFX), C++, HTML/CSS, PHP, MongoDB, PostgreSQL, MySQL, Redis}
+    \resumeItem{CI/CD and Tools: GCP, Docker, Kubernetes}
   \resumeSubHeadingListEnd
 
 \section{Awards}
 
   \resumeSubHeadingListStart
     \resumeSubItem{Hackathon Wins}{RHBHack 2021 and AtlasHack 2021 (Finalist, Special Challenge Winner)}
-    \resumeSubItem{Academic}{Dean's list, Crystal Rank, KUMON Mathematics Completer, Model UN Chairperson, DoFE Bronze}
+    \resumeSubItem{Academic}{Dean's list, Crystal Rank, KUMON Mathematics Completer, Model UN Chairperson, Duke of Edinburgh Bronze}
   \resumeSubHeadingListEnd
 
 %
