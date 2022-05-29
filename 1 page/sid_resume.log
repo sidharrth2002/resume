@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.1)  29 MAY 2022 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.1)  29 MAY 2022 20:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -676,33 +676,33 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 (Font)              scaled to size 14.4pt on input line 145.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 150.
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 149.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
-(Font)              scaled to size 10.95pt on input line 150.
+(Font)              scaled to size 10.95pt on input line 149.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 150.
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 149.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
-(Font)              scaled to size 12.0pt on input line 150.
-LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF on input line 151.
+(Font)              scaled to size 12.0pt on input line 149.
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF on input line 154.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-TLF.fd
 File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/SourceSansPro-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 151.
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 154.
 LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 151.
+(Font)              scaled to size 10.95pt on input line 154.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 154.
+(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 157.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 10.95pt on input line 154.
+(Font)              scaled to size 10.95pt on input line 157.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 154.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 157.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 154.
+(Font)              scaled to size 10.0pt on input line 157.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 154.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 157.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 10.95pt on input line 154.
+(Font)              scaled to size 10.95pt on input line 157.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -717,23 +717,29 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
 
-[2] (./sid_resume.aux)
+[2]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[3] (./sid_resume.aux)
 Package rerunfilecheck Info: File `sid_resume.out' has not changed.
-(rerunfilecheck)             Checksum: D1DECD0F02E0B6B9ED26D8A40D6EC3F6;609.
+(rerunfilecheck)             Checksum: 0CA2B46F4962A4BFA38C366A51C9F77B;891.
  ) 
 Here is how much of TeX's memory you used:
- 21434 strings out of 478579
- 392516 string characters out of 5853443
- 708426 words of memory out of 5000000
- 38925 multiletter control sequences out of 15000+600000
+ 21439 strings out of 478579
+ 392562 string characters out of 5853443
+ 707426 words of memory out of 5000000
+ 38927 multiletter control sequences out of 15000+600000
  483186 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,108p,646b,744s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on sid_resume.pdf (2 pages, 244545 bytes).
+Output written on sid_resume.pdf (3 pages, 248961 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
