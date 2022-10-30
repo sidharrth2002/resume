@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.1)  27 SEP 2022 09:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.11.1)  28 OCT 2022 14:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -524,21 +524,21 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [3] (./sid_resume.aux)
 Package rerunfilecheck Info: File `sid_resume.out' has not changed.
-(rerunfilecheck)             Checksum: 0CA2B46F4962A4BFA38C366A51C9F77B;891.
+(rerunfilecheck)             Checksum: 4E8000224AE0E935687443EF6A42CC8E;1057.
  ) 
 Here is how much of TeX's memory you used:
- 20501 strings out of 478579
- 375187 string characters out of 5853443
- 695133 words of memory out of 5000000
- 38041 multiletter control sequences out of 15000+600000
+ 20503 strings out of 478579
+ 375207 string characters out of 5853443
+ 695134 words of memory out of 5000000
+ 38042 multiletter control sequences out of 15000+600000
  408391 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,108p,646b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on sid_resume.pdf (3 pages, 122109 bytes).
+Output written on sid_resume.pdf (3 pages, 123386 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
