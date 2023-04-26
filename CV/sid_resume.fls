@@ -1,8 +1,8 @@
-PWD /Users/SidharrthNagappan/Documents/Latex Documents/Resume/1 page
+PWD /Users/SidharrthNagappan/Documents/Latex Documents/Resume/CV
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/SidharrthNagappan/Documents/Latex Documents/Resume/1 page/sid_resume.tex
+INPUT /Users/SidharrthNagappan/Documents/Latex Documents/Resume/CV/sid_resume.tex
 OUTPUT sid_resume.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
