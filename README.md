@@ -1,3 +1,3 @@
 # Sidharrth's Resume
 
-<img src="./sid_resume.png">
+Template is based off Sourabh Bajaj's resume template. 
