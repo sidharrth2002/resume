@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.14)  8 JUL 2023 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.14)  8 JUL 2023 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -510,15 +510,15 @@ Package rerunfilecheck Info: File `sid_resume.out' has not changed.
 (rerunfilecheck)             Checksum: FF834291BA246A0C161140404A667B32;531.
  ) 
 Here is how much of TeX's memory you used:
- 21074 strings out of 476025
- 396928 string characters out of 5790017
- 1883388 words of memory out of 5000000
- 41172 multiletter control sequences out of 15000+600000
- 514802 words of font info for 42 fonts, out of 8000000 for 9000
+ 21076 strings out of 476025
+ 396947 string characters out of 5790017
+ 1884388 words of memory out of 5000000
+ 41173 multiletter control sequences out of 15000+600000
+ 515100 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,104p,648b,778s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on sid_resume.pdf (2 pages, 121755 bytes).
+Output written on sid_resume.pdf (2 pages, 121808 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
