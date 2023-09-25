@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.14)  23 SEP 2023 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.14)  25 SEP 2023 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/sidharrthnagappan/Documents/Latex Documents/Resume/CV/sid_resume.tex"
-(/Users/sidharrthnagappan/Documents/Latex Documents/Resume/CV/sid_resume.tex
+**"/Users/sidharrthnagappan/Documents/Latex Documents/Resume/CV/sid_cv.tex"
+(/Users/sidharrthnagappan/Documents/Latex Documents/Resume/CV/sid_cv.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -439,8 +439,8 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count296
 \l__pdf_internal_box=\box66
-) (./sid_resume.aux)
-\openout1 = `sid_resume.aux'.
+) (./sid_cv.aux)
+\openout1 = `sid_cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
 LaTeX Font Info:    ... okay on input line 141.
@@ -480,9 +480,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 141.
- (./sid_resume.out) (./sid_resume.out)
+ (./sid_cv.out) (./sid_cv.out)
 \@outlinefile=\write4
-\openout4 = `sid_resume.out'.
+\openout4 = `sid_cv.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 144.
@@ -523,20 +523,20 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
 
-[4] (./sid_resume.aux)
-Package rerunfilecheck Info: File `sid_resume.out' has not changed.
+[4] (./sid_cv.aux)
+Package rerunfilecheck Info: File `sid_cv.out' has not changed.
 (rerunfilecheck)             Checksum: 1AA16E2DEB244ECA0AA2FC2113CC5554;1025.
  ) 
 Here is how much of TeX's memory you used:
  21100 strings out of 476025
- 397213 string characters out of 5790017
+ 397145 string characters out of 5790017
  1879388 words of memory out of 5000000
  41186 multiletter control sequences out of 15000+600000
  517546 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,104p,642b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,11n,104p,638b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on sid_resume.pdf (4 pages, 129820 bytes).
+Output written on sid_cv.pdf (4 pages, 129822 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
