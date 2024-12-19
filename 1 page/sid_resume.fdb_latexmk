@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1728731495 "/Users/sidharrthnagappan/Documents/Jobs and Letters/Resume/1 page/sid_resume.tex" "sid_resume.pdf" "sid_resume" 1728731495 0
-  "/Users/sidharrthnagappan/Documents/Jobs and Letters/Resume/1 page/sid_resume.tex" 1728731495 17221 4a651ebad0396591aed911f936f36b8c ""
+["pdflatex"] 1734515402 "/Users/sidharrthnagappan/Documents/Jobs and Letters/Resume/1 page/sid_resume.tex" "sid_resume.pdf" "sid_resume" 1734515403 0
+  "/Users/sidharrthnagappan/Documents/Jobs and Letters/Resume/1 page/sid_resume.tex" 1734515402 16320 2bfcc239e58426e7ef88704825317ff8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -155,9 +155,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1684004996 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1684004987 7883458 a8a1aa1bb04f2d36ac413e9b9dd7aec0 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "sid_resume.aux" 1728731495 1188 152968df58c4f0707153662147fcd814 "pdflatex"
-  "sid_resume.out" 1728731495 567 d152863acd8fa5c095939709e20f53d3 "pdflatex"
-  "sid_resume.tex" 1728731495 17221 4a651ebad0396591aed911f936f36b8c ""
+  "sid_resume.aux" 1734515403 1301 e93ff24530d597ebf71b385f7393837b "pdflatex"
+  "sid_resume.out" 1734515403 693 12dd5f11e7d8eeecfdac73893e80d8eb "pdflatex"
+  "sid_resume.tex" 1734515402 16320 2bfcc239e58426e7ef88704825317ff8 ""
   (generated)
   "sid_resume.aux"
   "sid_resume.log"
