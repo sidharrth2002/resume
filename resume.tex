@@ -1,0 +1,279 @@
+\documentclass[]{resume-openfont}
+
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\pagestyle{fancy}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, allcolors=black}
+\color{black}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{tikz}
+
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\researchHeading}[6]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4} \newline #5 \hfill #6}
+\newcommand{\compactResearchHeading}[4]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4}}
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+{#2}\fakeNewLine}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+% \begin{center}
+%     \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+%     \small
+%     \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+%     \href{\yourWebsite}{\underline{\yourWebsite}} $|$
+%     \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} $|$
+%     \href{https://linkedin.com/in/\linkedInUserName}{\underline{linkedIn/in/\linkedInUserName}}
+% \end{center}
+
+\newcommand{\yourName}{Sidharrth Nagappan}
+\newcommand{\yourEmail}{sn666@cam.ac.uk}
+\newcommand{\linkedInUserName}{sidharrth-nagappan}
+\newcommand{\githubUserName}{sidharrth2002}
+\newcommand{\yourWebsite}{https://mathsforgeeks.org/}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\multirow{4}{*}{\hspace{-21.5pt}\textbf{\Huge Sidharrth Nagappan}} & \href{mailto:\yourEmail}{\yourEmail ~ \faicon{envelope}} \\
+	% & \href{https://www.linkedin.com/in/\linkedInUserName/}{\linkedInUserName ~ \faicon{linkedin}} \\
+    & \href{https://www.github.com/\githubUserName}{\githubUserName ~ \faicon{github}} \\
+    & \href{https://mathsforgeeks.org/}{\yourWebsite ~ \faicon{link}} \\
+    & $+$447936648386
+\end{tabular*}
+\sectionsep 
+
+\vspace{-2mm} %-5 originally
+% %--------------------------------------------------------------
+% %     Skills
+% %--------------------------------------------------------------
+% \section{Skills}
+% \sectionsep
+% \begin{tightemize}
+    % \item Languages/Databases: Python, C++, JavaScript, Scheme, Neo4j, PostgreSQL
+    % \item Tools: ANTLR4, PLY, Clang, GraphQL, AWS, Docker, Git, Linux
+% \end{tightemize}
+% \sectionsep
+
+% %--------------------------------------------------------------
+% %     Education
+% %--------------------------------------------------------------
+\section{Education}
+\sectionsep
+
+\educationHeading{University of Cambridge}{Master of Philosophy in Advanced Computer Science}{Cambridge, UK}{Sep 2024 - June 2025}
+\begin{tightemize}
+    \item Research focused on deep neural representation learning for spatial transcriptomics in the \href{https://www.cl.cam.ac.uk/research/ai/}{\underline{Artificial Intelligence Group}}, supervised by \href{https://www.cl.cam.ac.uk/~mj201/index.html}{\underline{Prof. Mateja Jamnik}} and \href{https://simidjievskin.github.io/}{\underline{Dr Nikola Simidjievski}}.
+    \item Full-ride, merit-based \href{https://en.wikipedia.org/wiki/Jardine_Scholarship}{\underline{Jardine Scholarship}} at Magdalene College
+\end{tightemize}
+\sectionsep
+
+\educationHeading{Multimedia University}{BCS in Computer Science and Data Science (\textbf{CGPA: 3.99 / 4.00}, ranked \textbf{1st / $\approx$ 250} graduates)}{Kuala Lumpur, MY}{Nov 2019 - July 2023}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\sectionsep
+\resumeHeading{MoneyLion}{Software Engineer (Data Platform)}{Kuala Lumpur, MY}{July 2023 - Aug 2024}
+\begin{tightemize}
+\item Architected large-scale data platforms powering analytics and machine learning for 1.8T+ rows.  
+\item Built a cross-organization Snowflake federation pipeline in Terraform; modularized infrastructure to cut toil, boost engineering efficiency for 100+ members of the data organisation
+\item Solved Airbyte's IAM role authentication issue by \href{https://github.com/airbytehq/airbyte-platform/pull/279}{\underline{contributing to open-source}}, and subsequently migrated Airbyte from EC2 to Kubernetes, increasing ingestion performance and scalability by over 80\%
+\item Provisioned pioneering cross-organisation data streaming infrastructure using Kafka, MSK and Iceberg Tables, enabling real-time streaming of data into the universal \href{https://www.databricks.com/blog/2020/01/30/what-is-a-data-lakehouse.html}{\underline{lakehouse}}
+\item Mentored 4 interns, conducted regular code reviews, guided them through their projects and established robust and structured engineering practices within the team
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Sambal SOS}{Co-Founder}{Kuala Lumpur, MY}{July 2021 -}
+\begin{tightemize}
+\item Co-founded Malaysia’s first open-source aid data crowdsourcing platform (30K+ users). Led a 5-person dev team, deployed the MVP in under four days, and reviewed 100+ pull requests from the Malaysian open-source community.
+\item Featured in 20+ publications and spoke at Malaysia's Big Data Week, the Ministry of Trade, and on BFM Radio.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Monash University \& Multimedia University}{Research Assistant}{Kuala Lumpur, MY}{Aug 2022 - June 2023}
+\begin{tightemize}
+    \item Worked on signal processing and deep audio modelling, with a particular focus on multi-stream audio spectogram transformers for the multimodal analysis of depression in speech using PyTorch
+    % \item Built several deep multi-stream emotion analysis frameworks, examined the pioneering contributions of tabular additions to SOTA image models and published at IEEE's ICIP 2023
+    \item Built deep multi-stream emotion analysis frameworks, explored tabular additions to SOTA image models (IEEE ICIP 2023), and developed a novel industrial text scoring pipeline using a multimodal, tabular Longformer.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{AirAsia}{Data Intern (Data \& Machine Learning Eng.)}{Kuala Lumpur, MY}{May 2022 - Aug 2022}
+\begin{tightemize}
+    % \item Wrote Apache Airflow data pipelines and BQSQL to keep up with changing business demands and deployed cached FastAPI microservices for recommendation model deployment, resulting in $\approx$ 40\% latency reduction.
+    % \item Shipped dashboard scrapers and Airflow DAG generators within Gitlab CI to maximise productivity by allowing a 30-man team of data engineers, data scientists and non-technical analysts to write config-driven over code-driven DAGs, maintaining code consistency and facilitating the faster provisioning of data pipelines by up to 50\%
+    \item Wrote Apache Airflow pipelines and BQSQL to meet evolving business needs; deployed cached Tensorflow / PyTorch + FastAPI microservices for recommendation models, reducing inference latency by $\approx$ 40\%.
+    \item Shipped dashboard scrapers and Airflow DAG generators within GitLab CI, enabling a 30-person team of data engineers, scientists, and analysts to create config-driven DAGs, improving code consistency and pipeline provisioning speed by up to 50\%.
+\end{tightemize}
+\sectionsep
+
+\resumeHeading{Rodeo}{Software Engineer \textit{(Freelance)} \footnote{Two more internships at Auronex and Lava X -- see \underline{\href{https://linkedin.com/in/sidharrth-nagappan}{Linkedin}} for further details}}{Kuala Lumpur, MY}{Jan 2022 - Dec 2022}
+\begin{tightemize}
+        \item Engineered the tech from the ground up as part of a 2-man team for a Series-B out-of-home advertising startup, comprising a real-time driver mobile app, an admin interface and a super app server. 
+\end{tightemize}
+\sectionsep
+
+% \resumeHeading{BlackBerry}{Security Researcher Intern}{Waterloo, CA}{Jan 2020 - Apr 2020}
+% % {Supervised by Dr. Glenn Wurster and Shay Berkovich}
+% \begin{tightemize}
+%     % \item Implemented a framework to extend our vulnerability scanning capabilities by integrating with open-source vulnerability feeds.
+%     % \item Analyzed techniques of \textbf{Docker} image inspection and vulnerability scanning through open source technologies.
+%     \item Researched and designed a benchmark to quantitatively measure the effectiveness of different open-source and proprietary Docker container image scanners, which was published in the USENIX CSET 20' workshop.
+%     % \item Investigated machine learning-based fuzzing techniques for discovering algorithmic complexity vulnerabilities.
+% \end{tightemize}
+% \sectionsep
+
+% \resumeHeading{Zenefits}{Software Engineering Intern}{Vancouver, CA}{May 2019 – Aug 2019}
+% \begin{tightemize}
+%     \item Built customer-facing features for Zenefits Performance Management with React and integrated with the Django backend.
+%     % \item Designed new permission services and a history feature to protect the integrity of one-on-one reviews.
+%     % which are highly demanded by customers.
+%     % \item Developed authentication and mailing services for Kudos, a social network prototype for providing recognition.
+%     \item Improved the performance of different sequential document update tasks using Celery, a distributed task queuing system.
+% \end{tightemize}
+% \sectionsep
+
+% \resumeHeading{Horizn}{Software Engineering Intern}{Toronto, CA}{May 2018 – Aug 2018}
+% \begin{tightemize}
+%     \item Wrote a suite of automation scripts and queries in Python and SQL to streamline clients’ data transfer to AWS services.
+%     \item Built modular components in PHP Laravel to automate the company's product addition pipelines.
+% \end{tightemize}
+% \sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+% \section{Research Experience}
+% \sectionsep
+% \compactResearchHeading{University of Waterloo}{Research Fellow \& Research Assistant}{Waterloo, CA}{May 2020 -- Present}
+% \begin{tightemize}
+%     \item Did research in combinatorial reconfiguration (e.g. subgraph and multiset reconfiguration), computer algebra (e.g. matrix decomposition algorithms), and software systems (e.g. build systems analysis).
+% \end{tightemize}
+% \begin{tightemize}
+%     \item Proved new algorithmic and complexity results for various problems in reconfiguration (CoRe), using tools ranging from graph theory to automata theory. (Supervised by Prof. Naomi Nishimura)
+%     \item Designed a lightweight static-analysis tool for function-level code analysis of C++ code across different build configurations, which allows us to visualize function-level structures and query about the graph properties, providing researchers and practitioners insights into their code quality and performance bottlenecks. (Supervised by Prof. Shane McIntosh)
+%     \item Researched different methods to find the Smith Normal Form of a matrix efficiently over $\mathbb{Z}_{p^2}$, such as experimenting with $J$-ideals. (Supervised by Prof. Armin Jamshidpey)
+% \end{tightemize}
+% \sectionsep
+
+% \section{Research Experience}
+% \compactResearchHeading{University of Waterloo}{Research Fellowship \& Research Assistant}{Waterloo, CA}{May 2020 -- Present}
+% \begin{tightemize}
+%     \item Researched on topics including graph theory, static analysis tooling for C++ build system configurations, and efficient matrix decomposition algorithms (Supervised by Prof. Naomi Nishimura, Shane McIntosh, and Armin Jamshidpey)
+% \end{tightemize}
+% \sectionsep
+
+% \researchHeading{University of Waterloo}{Undergraduate Research Fellowship}{Waterloo, CA}{May 2021 -- May 2022}{Supervised by Prof. Shane McIntosh}{Topics: Software Analysis}
+% \begin{tightemize}
+%     \item Designed a lightweight static-analysis tool for function-level code analysis of C++ code across different build configurations, which allows us to visualize function-level structures and query about the graph properties, providing researchers and practitioners insights into their code quality and performance bottlenecks.
+% \end{tightemize}
+% \sectionsep
+
+% \researchHeading{University of Waterloo}{Undergraduate Research Assistant}{Waterloo, CA}{May 2020 - Apr 2021}{Supervised by Dr. Armin Jamshidpey}{Topics: Computer Algebra}
+% \begin{tightemize}
+%   \item Investigated algorithms for finding normal bases in finite fields and calculating Smith Normal Form of matrices over $\mathbb{Z}_{p^2}$.
+%   \item Researched different methods to find the Smith Normal Form of a matrix efficiently, such as experimenting with $J$-ideals.
+% \end{tightemize}
+% \sectionsep
+
+%--------------------------------------------------------------
+%     Volunteering
+%--------------------------------------------------------------
+% \section{Volunteering}
+% \resumeHeading{UW Blueprint}{Project Developer}{Waterloo, CA}{Jan 2018 -- Apr 2020}
+% \begin{tightemize}
+%     \item Helped multiple non-profits solve existing problems with novel software solutions, such as  preventing language loss, improving paramedics service for catastrophic events, and helping people with down syndrome with life-skills learning. We built these solutions on technologies such as React, Flask, Unity, PostgreSQL, and AWS. 
+% \end{tightemize}
+% \sectionsep
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+% \section{Projects}
+
+% \Project{Docsify PDF Embed}{https://github.com/lazypanda10117/docsify-pdf-embed} \\
+% \begin{tightemize}
+%     \item A \textbf{JavaScript} plugin that allows dynamic cross-platform embedding of PDFs on Docsify using \textbf{PDF.js} and \textbf{PDFObject}.
+% \end{tightemize}
+% \sectionsep
+
+% \Project{BioSyntax}{https://github.com/bioSyntax} \\
+% \begin{tightemize}
+%     \item A research-backed computational biology syntax highlighting suite to help bioinformaticians with data comprehension.
+% \end{tightemize}
+% \sectionsep
+
+%--------------------------------------------------------------
+%     Publications
+%--------------------------------------------------------------
+\section{Publications}
+\sectionsep
+% \begin{tightemize}
+%     \item See \href{https://scholar.google.com/citations?user=4v_rNokAAAAJ&hl=en}{Google Scholar}
+% \end{tightemize}
+\begin{tightemize}
+
+  \item \textbf{Sidharrth Nagappan*}, Chern Hong Lim, Anuja Thimali Dharmaratne. Towards AST-LLDs for the Analysis of Depression in Speech Signals \textit{- The 15th APSIPA, Taiwan}, 2023. \href{https://ieeexplore.ieee.org/document/10317141}{\faicon{link}}
+  \item \textbf{Sidharrth Nagappan*}, Jia Qi Tan*, Lai-Kuan Wong, John See. Context-Aware Multi-Stream Networks for Dimensional Emotion Prediction in Images - \textit{30th International Conference on Image Processing (ICIP), KL, Malaysia}, 2023. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10221960}{\faicon{link}}
+  
+  \item \textbf{Sidharrth Nagappan*}, Hui-Ngo Goh, Amy Hui-Lan Lim. Hybrid Deep Neural Networks for Industrial Text Scoring \textit{- The 35th IEA AIE, Kitakyushu, Japan}, 2022. \href{https://link.springer.com/chapter/10.1007/978-3-031-08530-7_58}{\faicon{link}}
+
+\end{tightemize}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+% \section{Education}
+% \sectionsep
+
+% \educationHeading{University of Cambridge}{MPhil in Advanced Computer Science}{Cambridge, UK}{Present}
+% \begin{tightemize}
+%     \item Research focuses on quantum computation and learning theory.
+%     \item Supervisor: Prof. Tom Gur and Dr. Sathyawageeswar Subramanian
+%     \item Courses: Quantum Complexity, Quantum Architecture, Cryptography, Theory of Deep Learning, ML Systems
+% \end{tightemize}
+% \sectionsep
+
+% \educationHeading{University of Waterloo}{BMath in Computer Science and Combinatorics \& Optimization, with a minor in Pure Mathematics}{Waterloo, CA}{June 2022}
+% \begin{tightemize}
+%   \item Cumulative Average: 91 \%, Major Average: 92 \% (last 2 years)
+%   \item Recognition: Undergraduate Research Fellowship, Frank Lun Scholarship for Excellence
+% \end{tightemize}
+
+\end{document}
